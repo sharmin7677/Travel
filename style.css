@@ -120,6 +120,7 @@ padding: 1.1rem 1.2rem;
 background-color: rgba(255, 84, 0, 1);
 color: white;
 font-weight: 600;
+cursor: pointer;
 }
 /* popular tour */
 .popular-section{
@@ -146,6 +147,7 @@ font-weight: 600;
 
 }
 .text-container{
+    margin: 2.2rem 0;
     text-align: center;
 }
 .row-1, .row-2, .row-3{
@@ -176,15 +178,186 @@ font-weight: 600;
     
  
 }
+/* service section */
+.card-row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.1rem;
+}
+.card-1, .card-2, .card-3{
+    width: 90%;
+    height: 250px;
+    background-color: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+    border-radius: 1rem;
+}
+.card img{
+    width: 64px;
+    height: 64px;
+}
+.card h4{
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.2rem 0;  
+}
+.card p{
+    color: rgba(90, 90, 93, 1);
+}
+.card-2{
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.card-row-2{
+    display: flex;
+    justify-content: center;
+    margin: 1.8rem 0;
+   
+}
+.card-3{
+    width:50%;
+}
+/* discount section */
+.book-image{
+    position: relative;
+    margin-bottom: 2.2rem;
+}
+.book-image img{
+width: 100%;
+border-radius: 8px;
 
+}
+.book-card{
+    width: 40%;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 70%;  
+    transform: translate(-50%, -50%); 
+}
+.time-set{
+    display: flex;
+    gap: 1.2rem;
+    
+}
+.set-icon{
+    color: rgba(255, 84, 0, 1);
+}
+.book-text-container, .time-set{
+    margin: 1rem 0;
+    color: rgba(90, 90, 93, 1);
+}
+.book-text-container h4{
+    margin: 1rem 0;
+    color: black;
+}
+.price{
+    margin: 1.2rem 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgba(255, 84, 0, 1);
+}
+.book-2{
+    position: absolute;
+    top: 50%;
+    left: 30%;  
+    transform: translate(-50%, -50%);  
+}
+.package-btn{
+    display: flex;
+    justify-content: center;
+}
+/* place section */
+.place{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+padding: 2.2rem 0;
+}
+.place-text-container p, li{
+margin: 1.2rem 0;
+}
+.place-text-container h4{
+    font-size: 2.2rem;
+    
+}
+.place-video video{
+    border-radius: 0.7rem;
+}
+/* newsletter section */
+.newsletter-container{
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 4rem;
+}
+.news-card{
+    padding: 2rem;
+    border: 1px solid rgba(255, 84, 0, 1);
+    border-radius: 0.5rem;
+}
+.news-card p{
+margin: 1.2rem 0;
+color: rgba(90, 90, 93, 1);
+}
+.news-card input{
+margin:1rem 0;
+width: 95%;
+background-color: rgba(19, 19, 24, 0.05);
+}
+.news-image{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+.btn-2{
+    margin-top: 1.2rem;
+    width: 100%;
+}
+.travel-cards{
+    background-color: rgba(255, 84, 0, 1);
+    border-radius: 1rem;
+    padding: 0.8rem 1.5rem;
+    position: absolute;
+    color: white;
+    left: 68%;
+    top: 82%;
+    transform: translate(-50%, -50%) rotate(-30deg);  
 
-
+}
+/* footer section */
+footer{
+  padding-top: 2.5rem ;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.footer-logo h3{
+    font-size: 2rem;
+}
+.icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.copy-rules{
+    padding:1rem 0;
+}
 @media screen and (max-width:576px){
-    body{
-        width: 90%;
-        margin: 1.2rem auto;
-        
-    }
+    body {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 0 1rem; 
+        box-sizing: border-box; 
+      }
     .hamburger-icon{
         display: block;
     }
@@ -227,6 +400,87 @@ font-weight: 600;
     margin: 1rem 0;
     
 }
+.card-row-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+   
+}
+.card{
+    width: 90%;
+    margin: 1rem 0;
+} 
+/* Discount section */
+  .book-image {
+    width: 100%;
+    overflow: hidden; 
+    
+  }
 
+  .book-image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; 
+  }
+  .book-card {
+    width: 70%; 
+    height: auto;
+    padding: 20px;
+    top: 50%;
+    left: 50%; 
+    
+  }
 
+  .time-set {
+    width: 90%; 
+    flex-wrap: wrap;
+    gap: 15px; 
+  }
+  .book-card h4 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .book-text-container p, .book-text-container .price {
+    font-size: 14px;
+  }
+  .package-btn{
+    display: flex;
+    justify-content: start;
+}
+  /* place */
+  .place{
+    grid-template-columns: 1fr ;
+    padding: 1rem 0;
+    }
+    .place-text-container h4{
+        font-size: 1rem;
+        
+    }
+    .place-video video{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+    /* nweletter section */
+    .newsletter-container{
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+    .news-image img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+    .news-card input{
+        width: 90%;
+        }
+        .btn-2{
+            margin-top: 1.2rem;
+            width: 95%;
+        }
+    
+  
 }
