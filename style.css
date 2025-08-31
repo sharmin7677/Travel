@@ -303,6 +303,7 @@ margin: 1.2rem 0;
 color: rgba(90, 90, 93, 1);
 }
 .news-card input{
+   
 margin:1rem 0;
 width: 95%;
 background-color: rgba(19, 19, 24, 0.05);
@@ -312,6 +313,7 @@ background-color: rgba(19, 19, 24, 0.05);
     object-fit: cover;
     overflow: hidden;
     position: relative;
+    
 }
 .btn-2{
     margin-top: 1.2rem;
